@@ -9,7 +9,7 @@ conda install -c conda-forge numpy scipy mkl cython pandas
 ```
 
 # Getting started
-FastRNA requires to inputs: a gene x cell matrix `mtx` and a numpy array containing batch labels `batch_labels`.
+FastRNA requires two inputs: a gene x cell matrix `mtx` and a numpy array containing batch labels `batch_labels`.
 Note that both `mtx` and `batch_labels` should be sorted in an ascending order according to `batch_labels`.
 Also, `batch_label` should be in an integer format.
 This can be done by the following commands.
@@ -23,12 +23,12 @@ batch_label = batch_label[idx_sorted] # reorder mtx according to sorted index
 ```
 
 # Functions
-Two functions `fastrna_hvg` and `fastrna_pca` each performs feature selection and principal component analysis (PCA).
-For features selection,
+Two functions `fastrna_hvg` and `fastrna_pca` performs feature selection and principal component analysis (PCA), respectively.
+For feature selection,
 	```
 	gene_var = fastrna_hvg(mtx, batch_label)
 	```
-will return a array of length `n_gene` which is the number of genes (= equals the number of rows of `mtx`) that contains the variance of genes.
+will return an array of length `n_gene` which is the number of genes (= equals the number of rows of `mtx`) that contains the variance of genes.
 These variances can be used for feature selection (e.g. top 1000 genes with highest variance).
 
 For PCA,
@@ -41,7 +41,7 @@ A typical choice would be the sum over all UMI counts inside a cell, therefore, 
 
 # Use example 
 Create the `fastrna` folder inside the your project folder and download the `.so` in this repository.
-An usage example can be found [here](https://hanbin973.github.io/FastRNA/).
+A usage example can be found [here](https://hanbin973.github.io/FastRNA/).
 
 # Caution
 Current `scipy` sparse matrix does not enforce index sorting.
