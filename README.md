@@ -41,7 +41,7 @@ A typical choice would be the sum over all UMI counts inside a cell, therefore, 
 
 # Use example 
 Create the `fastrna` folder inside the your project folder and download the `.so` in this repository.
-A usage example can be found [here](https://hanbin973.github.io/FastRNA/).
+A usage example can be found [here](https://github.com/hanbin973/FastRNA_paper).
 
 # Caution
 Current `scipy` sparse matrix does not enforce index sorting.
