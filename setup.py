@@ -12,7 +12,7 @@ libs = ["mkl_rt"]
 lib_dirs = mkl_info.get("library_dirs")
 include_dirs = mkl_info.get("include_dirs")
 
-flags = ["-O3", "-fopenmp"]
+flags = ["-O3", "-fopenmp", "-xhost"]
 
 # description
 with open("README.md", "r") as f:
