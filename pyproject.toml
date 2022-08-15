@@ -1,6 +1,7 @@
 [build-system]
 requires = [
 		"setuptools",
+		"distutils",
 		"wheel",
 		"numpy==1.20.3",
 		"scipy",
