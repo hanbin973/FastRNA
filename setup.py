@@ -52,7 +52,7 @@ c_extensions = [
 
 setup(
     name="FastRNA",
-    version="0.0.1a",
+    version="0.1.0",
     packages=find_packages(),
     author="Hanbin Lee",
 	author_email="hanbin973@gmail.com",
