@@ -66,5 +66,6 @@ setup(
         "numpy",
         "scipy",
         "mkl",
+		"Cython",
     ],
 )
