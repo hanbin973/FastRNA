@@ -4,6 +4,6 @@ requires = [
         "scipy>=1.6.0",
         "Cython>=0.29.0",
 		"mkl>=2021.3.0",
-		"mkl-headers>=2021.3.0",
+		"mkl-include>=2021.3.0",
         ]
 build-backend = "setuptools.build_meta"
