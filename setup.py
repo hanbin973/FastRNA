@@ -1,3 +1,4 @@
+import os
 from setuptools import find_packages, setup, Extension
 
 import numpy as np
@@ -12,6 +13,9 @@ libs = ["mkl_rt"]
 lib_dirs = mkl_info.get("library_dirs")
 include_dirs = mkl_info.get("include_dirs")
 
+# compiler option
+os.environ["CC"] = "gcc"
+os.environ["CXX"] = "g++"
 flags = ["-O3", "-fopenmp", "-xhost"]
 
 # description
