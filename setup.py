@@ -63,8 +63,8 @@ setup(
     ext_modules=cythonize(c_extensions),
     include_dirs=np.get_include(),
     install_requires=[
-        "numpy>=1.18.0",
-        "scipy>=1.6.0",
-        "mkl>=2021.3.0",
+        "numpy==1.20.3",
+        "scipy==1.8.0",
+        "mkl==2021.3.0",
     ],
 )
