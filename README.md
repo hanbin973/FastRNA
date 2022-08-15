@@ -1,11 +1,16 @@
 # FastRNA
 FastRNA is a scalable framework for single-cell RNA sequencing (scRNA-seq) analysis.
 
-# Dependencies
+# Dependencies and Installation
 Five dependencies can be install using the following commands.
 
 ```
-conda install -c conda-forge numpy scipy mkl cython pandas
+conda install -c conda-forge numpy scipy mkl mkl-include cython pandas
+```
+
+The package can be installed by
+```
+pip install git+https://github.com/hanbin973/FastRNA.git
 ```
 
 # Getting started
