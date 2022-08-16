@@ -18,6 +18,9 @@ os.environ["CC"] = "gcc"
 os.environ["CXX"] = "g++"
 flags = ["-O3", "-fopenmp", "-xhost"]
 
+print(include_dirs)
+print(lib_dirs)
+
 # description
 with open("README.md", "r") as f:
     long_description = f.read()
