@@ -10,7 +10,7 @@ Welcome to FastRNA's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   notebooks/Tutorial
+   notebooks/Tutorial.ipynb
 
 
 

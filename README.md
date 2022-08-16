@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/fastrna/badge/?version=latest)](https://fastrna.readthedocs.io/en/latest/?badge=latest)
+
 # FastRNA
 FastRNA is a scalable framework for single-cell RNA sequencing (scRNA-seq) analysis.
 
