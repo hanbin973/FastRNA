@@ -18,6 +18,8 @@ os.environ["CC"] = "gcc"
 os.environ["CXX"] = "g++"
 flags = ["-O3", "-fopenmp", "-xhost"]
 
+
+print(mkl_info)
 print(include_dirs)
 print(lib_dirs)
 
