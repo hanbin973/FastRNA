@@ -12,11 +12,6 @@ Welcome to FastRNA's documentation!
 
    notebooks/Tutorial.ipynb
 
+.. automodule:: fastrna
+   :members:
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

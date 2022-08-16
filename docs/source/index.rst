@@ -12,6 +12,6 @@ Welcome to FastRNA's documentation!
 
    notebooks/Tutorial.ipynb
 
-.. automodule:: fastrna.core
+.. automodule:: fastrna
    :members:
 
