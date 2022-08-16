@@ -7,7 +7,7 @@ from Cython.Build import cythonize
 
 
 # libraries
-py_path = get_python_inc()
+py_path = get_python_inc().split('/')
 libs = ["mkl_rt"]
 
 lib_dirs = '/'.join(py_path[:-2]+['lib'])
