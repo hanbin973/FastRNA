@@ -1,7 +1,7 @@
 ipykernel
 nbsphinx
-numpy
-scipy
+intel-numpy
+intel-scipy
 Cython
 mkl
 mkl-include
