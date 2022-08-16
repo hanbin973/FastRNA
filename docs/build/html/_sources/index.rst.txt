@@ -14,4 +14,6 @@ Welcome to FastRNA's documentation!
 
 .. automodule:: fastrna
    :members:
+   :undoc-members:
+   :show-inheritance:
 
