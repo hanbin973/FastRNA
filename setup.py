@@ -47,6 +47,7 @@ c_extensions = [
         library_dirs=lib_dirs,
         extra_compile_args=flags,
         extra_link_args=flags,
+		cython_directives = {"embedsignature": True},
     ),
 ]
 
