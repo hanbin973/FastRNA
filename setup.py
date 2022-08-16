@@ -7,7 +7,7 @@ from Cython.Build import cythonize
 
 
 # libraries
-mkl_info = get_info("mkl")
+mkl_info = get_info("blas")
 libs = ["mkl_rt"]
 
 lib_dirs = mkl_info.get("library_dirs")
