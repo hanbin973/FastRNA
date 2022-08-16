@@ -3,24 +3,28 @@ from setuptools import find_packages, setup, Extension
 from distutils.sysconfig import get_python_inc
 
 import numpy as np
+from numpy.distutils.system_info import get_info
 from Cython.Build import cythonize
 
 
 # libraries
-py_path = get_python_inc().split("/")
+mkl_info = get_info("mkl")
 libs = ["mkl_rt"]
 
-lib_dirs = ["/".join(py_path[:-2] + ["lib"])]
-include_dirs = ["/".join(py_path[:-1])]
-
-print(py_path)
-print(lib_dirs)
-print(include_dirs)
+lib_dirs = mkl_info.get("library_dirs")
+include_dirs = mkl_info.get("include_dirs")
 
 # compiler option
 os.environ["CC"] = "gcc"
 os.environ["CXX"] = "g++"
 flags = ["-O3", "-fopenmp", "-xhost"]
+
+
+
+print(get_python_inc)
+print(mkl_info)
+print(include_dirs)
+print(lib_dirs)
 
 # description
 with open("README.md", "r") as f:
@@ -51,7 +55,7 @@ c_extensions = [
         library_dirs=lib_dirs,
         extra_compile_args=flags,
         extra_link_args=flags,
-        cython_directives={"embedsignature": True},
+		cython_directives = {"embedsignature": True},
     ),
 ]
 
@@ -60,7 +64,7 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     author="Hanbin Lee",
-    author_email="hanbin973@gmail.com",
+	author_email="hanbin973@gmail.com",
     description="FastRNA for scalable scRNA-seq analysis",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -71,6 +75,6 @@ setup(
         "numpy",
         "scipy",
         "mkl",
-        "Cython",
+		"Cython",
     ],
 )
