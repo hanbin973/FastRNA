@@ -1,27 +1,26 @@
 import os
 from setuptools import find_packages, setup, Extension
+from distutils.sysconfig import get_python_inc
 
 import numpy as np
-from numpy.distutils.system_info import get_info
 from Cython.Build import cythonize
 
 
 # libraries
-mkl_info = get_info("blas")
+py_path = get_python_inc()
 libs = ["mkl_rt"]
 
-lib_dirs = mkl_info.get("library_dirs")
-include_dirs = mkl_info.get("include_dirs")
+lib_dirs = '/'.join(py_path[:-2]+['lib'])
+include_dirs = '/'.join(py_path[:-1])
+
+print(py_path)
+print(lib_dirs)
+print(include_dirs)
 
 # compiler option
 os.environ["CC"] = "gcc"
 os.environ["CXX"] = "g++"
 flags = ["-O3", "-fopenmp", "-xhost"]
-
-
-print(mkl_info)
-print(include_dirs)
-print(lib_dirs)
 
 # description
 with open("README.md", "r") as f:
