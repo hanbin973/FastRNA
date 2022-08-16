@@ -5,17 +5,12 @@ from distutils.sysconfig import get_python_inc
 import numpy as np
 from Cython.Build import cythonize
 
-
 # libraries
 py_path = get_python_inc().split("/")
 libs = ["mkl_rt"]
 
 lib_dirs = ["/".join(py_path[:-2] + ["lib"])]
 include_dirs = ["/".join(py_path[:-1])]
-
-print(py_path)
-print(lib_dirs)
-print(include_dirs)
 
 # compiler option
 os.environ["CC"] = "gcc"
