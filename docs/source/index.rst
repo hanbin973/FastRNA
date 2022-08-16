@@ -12,7 +12,7 @@ Welcome to FastRNA's documentation!
 
    notebooks/Tutorial.ipynb
 
-.. automodule:: fastrna
+.. automodule:: fastrna.core
    :members:
    :undoc-members:
    :show-inheritance:

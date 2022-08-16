@@ -252,16 +252,17 @@ def fastrna_hvg(
         mtx,
         batch_label=None
         ):
-	"""
-	This function calculates the normalized gene variances based on the conditional Poisson distribution.
 
-	:param mtx: a csc format scipy sparse matrix. The columns (cells) must be sorted according to their batch labels
-	:type mtx: scipy.sparse.csc_matrix
-	:param batch_label: an array of batch labels. It should be sorted in an ascending order starting from `0`
-	:type batch_label: np.ndarray, optional
-	:return: array of normalized variances of the rows (genes or transcripts)
-	:rtype: np.ndarray
-	"""
+    """
+    This function calculates the normalized gene variances based on the conditional Poisson distribution.
+
+    :param mtx: a csc format scipy sparse matrix. The columns (cells) must be sorted according to their batch labels
+    :type mtx: scipy.sparse.csc_matrix
+    :param batch_label: an array of batch labels. It should be sorted in an ascending order starting from `0`
+    :type batch_label: np.ndarray, optional
+    :return: array of normalized variances of the rows (genes or transcripts)
+    :rtype: np.ndarray
+    """
 
     if batch_label is None:
         batch_label = np.zeros(mtx.shape[1])
@@ -306,21 +307,21 @@ def fastrna_pca(
         batch_label=None,
         k=50
         ):
-	"""
-	This function performs principal component analysis (PCA) based on the conditional Poisson distribution.
+    """
+    This function performs principal component analysis (PCA) based on the conditional Poisson distribution.
 
-	:param mtx: a csc format scipy sparse matrix. The columns (cells) must be sorted according to their batch labels
-	:type mtx: scipy.sparse.csc_matrix
-	:param n_umi_col: size factor of cells. The index must be sorted according to their batch labels
-	:type u_umi_col: np.ndarray
-	:param batch_label: an array of batch labels. It should be sorted in an ascending order starting from `0`
-	:type batch_label: np.ndarray, optional
-	:param k: number of principal components to calculate
-	:type k: int, optional
-	:return: eigenvalues, eigenvectors, PC coordinates and the covariance matrix
-	:rtype: np.ndarray, np.ndarray, np.ndarray, np.ndarray
-	"""
-	
+    :param mtx: a csc format scipy sparse matrix. The columns (cells) must be sorted according to their batch labels
+    :type mtx: scipy.sparse.csc_matrix
+    :param n_umi_col: size factor of cells. The index must be sorted according to their batch labels
+    :type u_umi_col: np.ndarray
+    :param batch_label: an array of batch labels. It should be sorted in an ascending order starting from `0`
+    :type batch_label: np.ndarray, optional
+    :param k: number of principal components to calculate
+    :type k: int, optional
+    :return: eigenvalues, eigenvectors, PC coordinates and the covariance matrix
+    :rtype: np.ndarray, np.ndarray, np.ndarray, np.ndarray
+    """
+
     if batch_label is None:
         batch_label = np.zeros(mtx.shape[1], dtype=int)
 
