@@ -4,7 +4,7 @@
 FastRNA is a scalable framework for single-cell RNA sequencing (scRNA-seq) analysis.
 
 # Dependencies and Installation
-Dependencies can be install using the following command.
+Dependencies can be installed using the following command.
 
 ```
 conda install -c conda-forge numpy scipy mkl mkl-include cython pandas
@@ -68,3 +68,7 @@ It will take less than a second even for very large matrices.
 
 # License
 The FastRNA Software is freely available for non-commercial academic research use. For other usage, one must contact Buhm Han (BH) at buhm.han@snu.ac.kr (patent pending). WE (Hanbin Lee and BH) MAKE NO REPRESENTATIONS OR WARRANTIES WHATSOEVER, EITHER EXPRESS OR IMPLIED, WITH RESPECT TO THE CODE PROVIDED HERE UNDER. IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE WITH RESPECT TO CODE ARE EXPRESSLY DISCLAIMED. THE CODE IS FURNISHED "AS IS" AND "WITH ALL FAULTS" AND DOWNLOADING OR USING THE CODE IS UNDERTAKEN AT YOUR OWN RISK. TO THE FULLEST EXTENT ALLOWED BY APPLICABLE LAW, IN NO EVENT SHALL WE BE LIABLE, WHETHER IN CONTRACT, TORT, WARRANTY, OR UNDER ANY STATUTE OR ON ANY OTHER BASIS FOR SPECIAL, INCIDENTAL, INDIRECT, PUNITIVE, MULTIPLE OR CONSEQUENTIAL DAMAGES SUSTAINED BY YOU OR ANY OTHER PERSON OR ENTITY ON ACCOUNT OF USE OR POSSESSION OF THE CODE, WHETHER OR NOT FORESEEABLE AND WHETHER OR NOT WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, INCLUDING WITHOUT LIMITATION DAMAGES ARISING FROM OR RELATED TO LOSS OF USE, LOSS OF DATA, DOWNTIME, OR FOR LOSS OF REVENUE, PROFITS, GOODWILL, BUSINESS OR OTHER FINANCIAL LOSS.
+
+# Commercialization
+To commercialize this software/algorithm, please contact Genealogy Inc. Use of this algorithm for commercial purposes, including implementing and recoding the same algorithm yourself to circumvent license protection, without permission is prohibited as the algorithm is patented. In addition, it is forbidden to insert this code or algorithm into other software packages without permission.
+
