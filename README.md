@@ -76,4 +76,4 @@ To commercialize this software/algorithm, please contact Genealogy Inc. Use of t
 This work has been accepted at the American Journal of Human Genetics.
 Please cite as
 
-    > H Lee, and B Han (2022). FastRNA: an efficient solution for PCA of single-cell RNA sequencing data based on a batch-accounting count model. Am J Hum Genet, _in press_
+   H Lee, and B Han (2022). FastRNA: an efficient solution for PCA of single-cell RNA sequencing data based on a batch-accounting count model. Am J Hum Genet, _in press_
