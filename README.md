@@ -72,3 +72,7 @@ The FastRNA Software is freely available for non-commercial academic research us
 # Commercialization
 To commercialize this software/algorithm, please contact Genealogy Inc. Use of this algorithm for commercial purposes, including implementing and recoding the same algorithm yourself to circumvent license protection, without permission is prohibited as the algorithm is patented. In addition, it is forbidden to insert this code or algorithm into other software packages without permission.
 
+# Citation
+This work has been accepted at the American Journal of Human Genetics.
+Please cite as
+    > H Lee, and B Han (2022). FastRNA: an efficient solution for PCA of single-cell RNA sequencing data based on a batch-accounting cout model. Am J Hum Genet, _in press_
