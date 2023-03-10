@@ -47,9 +47,9 @@ These variances can be used for feature selection (e.g. top 1000 genes with high
 
 For PCA,
 	```
-		eig_vec, eig_val, cov_mat, pca_coord = fastrna_pca(mtx, numi, batch_label)
+		eig_vec, eig_val, pca_coord, cov_mat = fastrna_pca(mtx, numi, batch_label)
 	```
-will return four objects: eigenvalues, eigenvectors, covariance matrix and PCA coordinates.
+will return four objects: eigenvalues, eigenvectors, PCA coordinates and the covariance matrix.
 `numi` is the user-specified size factor.
 A typical choice would be the sum over all UMI counts inside a cell, therefore, `numi = np.asarray(mtx.sum(axis=0)).ravel()`.
 
