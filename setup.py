@@ -9,8 +9,8 @@ from Cython.Build import cythonize
 py_path = get_python_inc().split("/")
 libs = ["mkl_rt"]
 
-lib_dirs = ["/".join(py_path[:-2] + ["lib"])]
-include_dirs = ["/".join(py_path[:-1])]
+lib_dirs = ["/".join(py_path[:-2] + ["lib"]), numpy.get_include()]
+include_dirs = ["/".join(py_path[:-1]), numpy.get_include()]
 
 # compiler option
 os.environ["CC"] = "gcc"
