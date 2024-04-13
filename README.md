@@ -22,6 +22,8 @@ The package can be installed by
 pip install git+https://github.com/hanbin973/FastRNA.git
 ```
 
+Note that the current implementation does not work in ARM-based MAC systems because MKL only works in x86 processors.
+
 # Getting started
 FastRNA requires two inputs: a gene x cell matrix `mtx` and a numpy array containing batch labels `batch_labels`.
 Note that both `mtx` and `batch_labels` should be sorted in an ascending order according to `batch_labels`.
@@ -47,7 +49,7 @@ These variances can be used for feature selection (e.g. top 1000 genes with high
 
 For PCA,
 	```
-		eig_vec, eig_val, pca_coord, cov_mat = fastrna_pca(mtx, numi, batch_label)
+		eig_val, eig_vec, pca_coord, cov_mat = fastrna_pca(mtx, numi, batch_label)
 	```
 will return four objects: eigenvalues, eigenvectors, PCA coordinates and the covariance matrix.
 `numi` is the user-specified size factor.
